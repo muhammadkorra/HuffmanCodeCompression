@@ -3,8 +3,8 @@
 
 typedef struct Heap_{
 	int size;
-	int (*compare) (const void *key1, const void *key2);
-	void (*destroy) (void *data);
+	int (*compare) (const void *key1, const void *key2); // function pointer to the comparison function, generically implemented
+	void (*destroy) (void *data); //destroy function, 
 	void **tree;
 } Heap;
 
